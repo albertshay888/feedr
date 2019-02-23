@@ -199,8 +199,7 @@ function processData(data) {
     var artUrl = data.articles[i].url;
     // console.log(artUrl);
 
-    // var fullArt = data.articles[i].content;
-    // console.log(fullArt)
+   
 
     var $title = $(
       '<a href=' + artUrl + '><div class="title">' + title + '</div ></a>'
@@ -246,11 +245,7 @@ function processData(data) {
     $('.thumbnail-feed').append($thumbnail);
   }
 
-  // $('.thumbnail').each(function(){
-  //     $(this).parallax("50%", 0.6);
-  //  });
 
-  // $('.thumbnail').parallax({imageSrc: thumbnail});
 
   $('.thumbnail').hover(function() {
     $('.front-page-feed').empty();
@@ -280,158 +275,3 @@ function processData(data) {
   });
 }
 
-// var x;
-// var index = 0;
-
-// function setup() {
-//     createCanvas(1000, 100);
-//     x = width;
-// }
-
-// function draw() {
-//     background(255);
-//     fill(0);
-
-//     // Display headline at x  location
-//     // textFont(f,16);
-//     textAlign(LEFT);
-//     text(headlines[index],x,180);
-
-//     // Decrement x
-//     x = x - 3;
-
-//     // If x is less than the negative width,
-//     // then it is off the screen
-//     var w = textWidth(headlines[index]);
-//     if (x < -w) {
-//       x = width;
-//       index = (index + 1) % headlines.length;
-//     }
-//   }
-
-//   setup();
-//   draw();
-
-///              FILTERING ALGORITHM                   ///
-
-// var search;
-
-// function findCountry(name) {
-//   var countryAcr = 'https://restcountries.eu/rest/v2/name/{' + name + '}';
-//   var countryRef = '';
-//   $.ajax({
-//     url: countryAcr,
-//     method: 'GET',
-//     error: function() {
-//       console.log('error');
-//     },
-//     success: function(data) {
-//       return data[0].alpha2Code;
-//     }
-//   });
-// }
-
-// function showAlternativeSideNews(manipulateData) {
-//   if (fromSearch) {
-//     return commonView(manipulateData); //immediately picks out the more suitable Data Points
-//   } else {
-//     var query = 'SELECT * FROM ratingSitesUS WHERE id IN (?)';
-//     connection.query(query, manipulateData.articles[0].source.id, function(
-//       err,
-//       res
-//     ) {
-//       if (err) {
-//         callAPI(manipulateData.articles[0]);
-//       } else {
-//         callAPI(manipulateData.articles[0]);
-//       }
-//     });
-//   }
-// }
-
-// function callAPI(parameter) {
-//   var search = parameter.description;
-
-//   $.get(`/newsapi/search/${search}`).then(data => {
-//     displayArticles(commonView(data));
-//   });
-// }
-
-// function commonView(manipulateData) {
-//   // chooses the reliable sites and the points that are different from the common results and displays them
-
-//   var commonPoints = [];
-//   var chosenAltData = [];
-//   var tempAltData = [];
-//   for (var i; manipulateData.totalResults - 1; i++) {
-//     var query = 'SELECT * FROM ratingSitesUS WHERE id IN (?)';
-//     connection.query(query, manipulateData.articles[i].source.id, function(
-//       err,
-//       res
-//     ) {
-//       if (err) {
-//         return manipulateData;
-//       } else {
-//         if (res.reliabilityRating > 3) {
-//           //making sure article is reliable
-//           commonPoints.push(res.conservativeRating); //adding conservative rating for calculation
-//           if (tempAltData.length < 20) {
-//             tempAltData.push(manipulateData.articles[i]);
-//           }
-//         }
-//       }
-//     });
-//   }
-//   //calculate commonPoints average
-//   var average = commonPoints[0];
-//   for (var i = 1; i < commonPoints.length; i++) {
-//     average += commonPoints[i];
-//   }
-//   average = commonPoints[0] / commonPoints.length - 1;
-
-//   for (var i = 1; i < commonPoints.length; i++) {
-//     if (average > commonPoints[i] + 3 || average < commonPoints[i] - 3) {
-//       chosenAltData.push(tempAltData[i]);
-//       tempAltData[i] = null;
-//     }
-//   }
-
-//   for (var i = 1; i < tempAltData.length; i++) {
-//     if (tempAltData[i] != null) {
-//       chosenAltData.push(tempAltData[i]);
-//     }
-//   }
-//   return chosenAltData;
-// }
-
-// function mixSearchResults(manipulateData) {
-//   //manipulate if there is time
-
-//   return manipulateData;
-// }
-
-// function chooseAlternateCountryViews(manipulateData) {
-//   /*
-//         if (key words in headline, name of another country, middle east, central america, reference
-//             to foreign affairs. make a db table or an array of key words for reference)
-//                 find other data from foreign tagged news sources
-//         else    
-//     */
-
-//   return manipulateData;
-// }
-
-// function keyWord() {
-//   var querySites = [];
-// }
-
-// function loosenCategoryParameters(data) {
-//   /*
-//         data--> whatever interests the user has. Takes it in and 
-//         manipulates (search, and top 20 methods so that you check
-//         key words in the title for sports terms as well as 
-//         choosing thronavbar)
-//     */
-
-//   return data;
-// }
