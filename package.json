@@ -1,7 +1,7 @@
 {
   "name": "feedr",
   "version": "1.0.0",
-  "description": "A full-stack news app that brings you a trustworthy articles giving you personalized, curated newsfeed tailored to whats important to you.",
+  "description": "A full-stack news app that brings you trustworthy articles giving you a personalized, curated newsfeed tailored to whats important to you.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/albertshay888/feedr"
+    "url": "https://github.com/albertshay888/feedr/issues"
   },
   "homepage": "https://github.com/albertshay888/feedr#readme",
   "dependencies": {
