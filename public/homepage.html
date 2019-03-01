@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/yda8anb.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ctp4rbl.css" />
     <link rel="stylesheet" href="https://use.typekit.net/bth6xlg.css" />
-
-    <link
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
@@ -21,58 +20,98 @@
   </head>
 
   <body>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="signup.html">Feedr</a>
-      
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-   
-              <li class="nav-item">
-                <a class="nav-link" href="profile.html">Categories</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="signup.html">Home</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="signup.html">Sign Up</a>
-                  </li> -->
-                
- 
-            <form class="form-inline my-2 my-lg-0 lolsearch" id='search-form'>
-              <input class="form-control mr-sm-2" id="search-input" type="text" aria-label="Search news">
-              <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" placeholder="Search topic"type="submit">Search</button>
+      <!-- <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </nav> -->
+
+
+      <!-- <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <img class="navbar-brand" src="assets/feedr-logo-white.png"/>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"></li><a href="signup.html">HOME</a></li>
+              <li class="active"></li><a href="profile.html">CATEGORIES</a> </li>
+            </ul>
+            <form class="navbar-form navbar-left lolsearch" id='search-form'> 
+              <div class="input-group">
+              <input class="form-control mr-sm-4" id="search-input" type="text" placeholder="Search topic" aria-label="Search news" color="white">
+              <div class="input-group-btn">
+                  <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" placeholder="Search topic"type="submit"  color="white">SEARCH</button>
+                </div>
+              </div>
             </form>
           </div>
-          <!-- <img class="navbar-brand" src="assets/feedr.jpg" />  -->
-  
-        </nav>
+        </nav> -->
+
+
+         
+
+
+
+
+         
+
+
+
+      <nav  class="navbar fixed-top navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="signup.html">Feedr</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>  
+          <a href="signup.html">
+           <img id="flogo" src="assets/feedr-logo-white.png"/>
+           </a>
+          <div id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"> 
+               <li class="nav-item">
+                    <a class="nav-link" id="navcat"  href="profile.html">CATEGORIES</a>
+                  </li>
+                  <!-- <li class="nav-item item-right">
+                      <a class="nav-link nav navbar-nav navbar-right" id="navdog" href="signup.html">SIGN IN</a>
+                    </li>     -->
+         <form class="form-inline my-2 my-lg-0 lolsearch" id='search-form'>
+              <input class="form-control mr-sm-4" id="search-input" type="text" placeholder="Search news topic" aria-label="Search news" color="white">
+              <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" type="submit"  color="white">SEARCH</button>
+              <!-- <li class="nav-item item-right">
+                  <a class="nav-link nav navbar-nav navbar-right" id="navdog" href="signup.html">SIGN IN</a>
+                </li>    -->
+                
+            </form>
+          </div>
+        </nav>  
 
 
         
-    <div id="btn-insert"></div>
+    <!-- <div id="btn-insert"></div> -->
    
     <div class="front-page-feed"></div>
     <div class="thumbnail-feed"></div>
 
-    <div class="fold-nav">
-      <div class="folded-nav">
-        <!-- <img id="fold-nav-line" src="assets/fold-final.png" /> -->
-      </div>
 
-      <!-- <div class="unfold-nav"> -->
+     
+<!-- 
+      <div class="unfold-nav">  -->
         <!-- <img id="x" src="assets/x_1-100.jpg" /> -->
-        <!-- <img id="unfold-nav-logo" src="assets/whitelogo_1-100.jpg" /> --> -->
-        <div class="categories-list">
+        <!-- <img id="unfold-nav-logo" src="assets/whitelogo_1-100.jpg" /> --> 
+        <!-- <div class="categories-list"> -->
           
         
-        </div>
-        </div>
-      </div>
-    </div>
+   
 </body>
 
     
@@ -91,3 +130,4 @@
   <script src="js/homepage.js"></script>
 
 </html>
+

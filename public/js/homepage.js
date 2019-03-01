@@ -1,22 +1,9 @@
 'use strict';
-// var mysql = require("mysql2");
 
-// var fromSearch = false;
-
-// var connection = mysql.createConnection({
-//   host: "localhost",
-//   // Your port; if not 3306
-//   port: 3306,
-//   // Your username
-//   user: "root",
-//   // Your password
-//   password: "",
-//   database: "feedr_db"
-// });
 
 $(document).ready(() => {
-  // $('.unfold-nav').hide();
-  // $('.categories-list').hide();
+
+  
   $.get('/api/user').then(data => {
     const $nav = $('.navbar');
     if (data) {
@@ -37,7 +24,9 @@ $(document).ready(() => {
       const $signin = $('<a>');
       $signin.attr('class', 'navbar');
       $signin.attr('id', 'signin-button');
-      $signin.html('Sign In With Google');
+      ////******** */
+      // $signin.html('google sign');  ******** //remember to uncoment  when google login works
+
       $signin.attr('href', '/auth/google');
       $nav.append($signin);
       trendingCall();
@@ -91,22 +80,14 @@ const displayArticles = articles => {
       let formattedDate = new Date(date);
       formattedDate.toString().split('GMT')[0];
 
-      let $title = $(
-        `<a href=${artUrl}><div class='title'>${title}</div ></a>`
-      );
+      let $title = $(`<a href=${artUrl}><div class='title'>${title}</div ></a>`);
       let $source = $(`<div class='source'>${source}</div >`);
       let $date = $(`<div class='date'><mark>PUBLISHED ON: ${formattedDate}<mark></div >`);
-
       let $subtitle = $(`<div class='subtitle'>'${subtitle}'</div >`);
       let $blurb = $(`<div class='blurb'>${blurb}</div >`);
       let $artUrl = $(`<a href=${artUrl}>READ ARTICLE</a>`);
-
-      let $thumbnail = $(
-        `<img class='thumbnail' src=${thumbnail} data-article=${i}> 
-        <br>
-
-        `
-      );
+      let $thumbnail = $(`<img class='thumbnail' src=${thumbnail} data-article=${i}> 
+      <br>`);
 
       articleHolder.push({
         title: $title,
@@ -125,7 +106,7 @@ const displayArticles = articles => {
     }
   }
 
-  $('.thumbnail').hover(function(event) {
+  $('.thumbnail').mouseover(function(event) {
     $('.front-page-feed').empty();
     const id = $(this).data('article');
     const article = articleHolder[id];
@@ -140,6 +121,9 @@ const displayArticles = articles => {
     );
   });
 };
+
+
+
 
 ///                 NAV BAR                 ///
 $('#fold-nav-line').on('click', function() {
@@ -161,12 +145,6 @@ $('#fold-nav-line').on('click', function() {
   });
 });
 
-// $(".unfold-nav").mouseout(function() {
-//     $("#fold-nav-line").show();
-//     $(".unfold-nav").hide();
-//     $(".categories-list").hide();
-
-// })
 
 ///                 TOP HEADLINES                    ///
 

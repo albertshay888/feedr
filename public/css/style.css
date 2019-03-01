@@ -1,25 +1,78 @@
 form.signup,
 form.login {
   margin-top: 50px;
+
+}
+#signin-button {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    float: right;
+    /* padding: 15px; */
+    margin-left: 45px; 
+    
+
 }
 
 #btn-insert {
     z-index: 4;
-}
+    /* font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+ 
+    margin-left: 500px; */
 
-/* .navbar {
-  overflow: hidden;
-  background-color: #333;
 }
+#search-input {
+    background-color: black;
+    padding:10px;
+}
+ #navcat  {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 12px;
+    margin-right: 200px;
+    padding: 10px;
+    font-size: 18px;
+    /* position: relative; */
+    float:center;
 
-.navbar a {
+} 
+
+
+#navdog  {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-align:right;
+    padding: 10px;
+    font-size: 15px;
+    margin-left:300px;
+    position:relative;
+    float:right;
+}
+.navbar {
+    padding:12px;
+    color: white;
+    background-color:black;
+    font-family: 'Ubuntu', sans-serif;
+    
+
+    
+  
+}
+ a .nav-item {
+    color: white;
+
+} 
+
+/* 
+#nav-link  { 
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 25px;
-} */
+}  */
+
 .thumbnail-feed {
     /* padding-top: 20px; */
     /* position: fixed; */
@@ -27,7 +80,9 @@ form.login {
     background-color:black;
     margin-top: 50px;
     margin-left: 0; 
-    font: white;
+
+
+
     /* font-size: 36px */
   }
   
@@ -35,7 +90,11 @@ form.login {
       z-index: 7;
 
   }
-  
+  #flogo {
+      
+      margin-right: 200px; 
+      float:center;
+  }
 .front-page-feed {
     padding-top: 20px;
     margin-top: 50px;
@@ -46,42 +105,37 @@ form.login {
     width: 50%; 
     height: 100%;
     margin-left:50%;
-    margin-top: 50px;
     overflow-y: scroll;
     color: white;
 }
 
 .thumbnail {
     padding-top: 20px;
+    margin-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
     /* opacity: 0.85; */
     /* border: 2px solid black; */
     margin-bottom: 20px;
     width: 50%;
-    font-size: 25
+    /* font-size: 25 */
     /* background-color: rgba(0, 0, 0, 0.9); */
   
 }
 
 .title { 
     margin-left: 10px;
+    padding: 10px;
     width: 85%;
-    margin-top: 25px;
+    margin-top: 85px;
     font-family: retiro-std-24pt, sans-serif; 
-    font-size: 46px;
+    font-size: 44px;
     line-height: 0.8;  
     color: white;
     text-transform: uppercase;
     text-align: center;
 }
 
-/* .source {
-    color: white;
-    font-size: 100px;
-    text-align: center;
-    background: white
-} */
 
 
 a:hover {
@@ -97,6 +151,7 @@ a:hover {
 .date {
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-right:35px;
     font-family: neue-haas-grotesk-display, sans-serif;
     /* background-color: white; */
     color: black;
@@ -111,6 +166,7 @@ mark {
 
 .subtitle {
     margin-left: 10px;
+    margin-right: 10px;
     font-family: neue-haas-grotesk-display, sans-serif;
     line-height: 0.95;
     color: white;
@@ -128,11 +184,13 @@ mark {
 .source{
     text-align: center;
     width: 85%;
+    padding: 10px;
     margin-left: 10px;
     font-family: europa, sans-serif;
     font-weight: 400;   
     font-style: normal;
     font-size: 26px
+    
 
 }
 .edited-blurb {
@@ -144,6 +202,7 @@ mark {
     margin-left: 10px;
     margin-bottom: 30px;
     text-align: center;
+    margin-right: 30px;
 
 }
 
@@ -165,7 +224,9 @@ mark {
     padding-bottom: 25px;
 }
 
-
+a {
+    color: white;
+}
 
 .fold-nav {
     z-index:2;
@@ -195,13 +256,13 @@ mark {
     margin-left: 10px;
 }
 
-.nav-category {
-    color: black;
+/* .nav-category {
+    background-color:black;
     margin: 4%;
     font-size: 30px;
     float: left;
-
-}
+    
+} */
 
 .nav-category:hover {
     transform: translateX(15px);
@@ -217,11 +278,18 @@ mark {
     margin-left: 10px;
 }
 
-
+/* #search-form {
+    width: 225px;
+} */
 .lolsearch {
     /* position: fixed; */
     z-index: 5;
-    /* margin-left: 30%; */
+    font-size: 15px;
+    /* width: 20px; */
+    font-family: 'Ubuntu', sans-serif;
+
+
+    margin-left: 20px;
     /* margin-top: -15px; */
 }
 
@@ -230,19 +298,19 @@ mark {
 #search-btn{
 
 
-    font-family: europa, sans-serif;
-
-    margin-top: 25px;
+    font-family: 'Ubuntu', sans-serif;
+   
+    /* margin-top: 25px; */
     background-color: white;
     color: black;
     border: 1px solid black;
 }
 
 #search-btn:hover {
-    font-family: europa, sans-serif;
-    margin-top: 25px;
-    background-color: rgba(0, 0, 0, 0.523);
-    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    background-color:black;
+    color:#fff;
+    /* color: black; */
     border: 1px solid black;
 }
 

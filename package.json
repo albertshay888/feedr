@@ -1,7 +1,7 @@
 {
   "name": "feedr",
   "version": "1.0.0",
-  "description": "A full-stack news app that brings you trustworthy articles giving you a personalized, curated newsfeed tailored to whats important to you.",
+  "description": "A full-stack newsfeed web application that brings you trustworthy information, curating a personalized newsfeed tailored to whats important to you.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,6 +23,7 @@
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
     "mdbootstrap": "^4.6.1",
+    "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
     "newsapi": "^2.4.0",
     "passport": "^0.4.0",
