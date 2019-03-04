@@ -14,7 +14,7 @@ passport.deserializeUser((id, done) => {
     done(null, user);
   });
 });
-
+console.log('before call Oath. google client id: ', process.env.GOOGLE_CLIENT_ID);
 passport.use(
   new GoogleStrategy(
     {
@@ -39,12 +39,13 @@ passport.use(
         }
       })
         .then((user, err) => {
+          console.log('Oath success. user: ', user);
           return done(null, user);
         })
         .catch(err => {
-          console.log(err);
+          console.log("Oauth error: ", err);  
         });
-    }
+    } 
   )
 );
 

@@ -14,20 +14,21 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/albertshay888/feedr/issues"
+    "url": "https://github.com/albertshay888/feedr"
   },
   "homepage": "https://github.com/albertshay888/feedr#readme",
   "dependencies": {
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "express-handlebars": "^3.0.0",
+    "express-handlebars": "^3.0.2",
     "express-session": "^1.15.6",
+    "express-sessions": "^1.0.6",
     "mdbootstrap": "^4.6.1",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
     "newsapi": "^2.4.0",
     "passport": "^0.4.0",
     "passport-google-oauth2": "^0.1.6",
-    "sequelize": "^4.42.0"
+    "sequelize": "^4.42.1"
   }
 }

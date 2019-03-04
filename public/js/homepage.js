@@ -25,8 +25,7 @@ $(document).ready(() => {
       $signin.attr('class', 'navbar');
       $signin.attr('id', 'signin-button');
       ////******** */
-      // $signin.html('google sign');  ******** //remember to uncoment  when google login works
-
+      $signin.html('Google Sign in');  
       $signin.attr('href', '/auth/google');
       $nav.append($signin);
       trendingCall();
@@ -98,6 +97,7 @@ const displayArticles = articles => {
         arturl: $artUrl
       });
       $('.thumbnail-feed').prepend($thumbnail);
+      // $$('.photobanner').html($thumbnail);
       // $('.thumbnail-feed').prepend($source);
 
     } else {

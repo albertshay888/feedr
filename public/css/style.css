@@ -1,24 +1,24 @@
 form.signup,
-form.login {
+form.login {    
   margin-top: 50px;
 
 }
 #signin-button {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
-    float: right;
-    /* padding: 15px; */
-    margin-left: 45px; 
+    font-size: 16px;
+    position: relative; 
+     padding: 15px; 
+    margin-left: 400px; 
     
 
 }
 
 #btn-insert {
     z-index: 4;
-    /* font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+     font-family: 'Ubuntu', sans-serif;
+    font-size: 16px; 
  
-    margin-left: 500px; */
+    margin-left: 500px;
 
 }
 #search-input {
@@ -29,7 +29,7 @@ form.login {
     color: white;
     font-family: 'Ubuntu', sans-serif;
     margin-left: 12px;
-    margin-right: 200px;
+    margin-right: 12px;
     padding: 10px;
     font-size: 18px;
     /* position: relative; */
@@ -92,8 +92,8 @@ form.login {
   }
   #flogo {
       
-      margin-right: 200px; 
-      float:center;
+      margin-right: 100px; 
+      float:left;
   }
 .front-page-feed {
     padding-top: 20px;
@@ -252,8 +252,9 @@ a {
 }
 
 .categories-list {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 10px;
+    margin-bottom: 50px;
 }
 
 /* .nav-category {
